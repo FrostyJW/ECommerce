@@ -24,10 +24,23 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navmenu">
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a href="products-page.html" class="nav-link">
+                        <li class="nav-item dropdown">
+                            <a href="products-page.html" 
+                                class="nav-link dropdown-toggle"
+                                id="categoriesDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                                >
                                 პროდუქცია
                             </a>
+                            <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                                <li><a href="" class="dropdown-item">ფეხსაცმელი</a></li>
+                                <li><a href="" class="dropdown-item">ტანსაცმელი</a></li>
+                                <li><a href="" class="dropdown-item">ქუდები</a></li>
+                                <li><a href="" class="dropdown-item">აქსესუარები</a></li>
+                                <li><a href="products-page.html" class="dropdown-item">ყველა</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a href="" class="nav-link">
@@ -106,7 +119,7 @@
                 </div>
                 <div class="product-card">
                     <div class="product-image">
-                        <span class="discount-tag">50% off</span>
+                        <span class="discount-tag">-50%</span>
                         <a href="">
                             <img src="./img/sneaker-4.png" class="product-thumb" alt="">
                         </a>

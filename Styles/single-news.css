@@ -64,6 +64,20 @@ ul{
 .brand-logo:hover{
   transform: scale(1.1);
 }
+.dropdown-menu {
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.dropdown-item {
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  color: blue;
+}
+
   /* MAIN CONTENT */
 .news-article{
     text-align: center;
