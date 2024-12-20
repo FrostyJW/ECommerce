@@ -1,77 +1,55 @@
 @import url('https://free.bboxtype.com/embedfonts/?family=FiraGO:700i');
-:root{
-    --white-light: rgba(255, 255, 255, 0.5);
-    --blue: blue;
-    --white: white;
-    --black: black;
-    --gray: #ededed;
+body{
+  font-family: 'FiraGO', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
 }
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body{
-    font-family: 'FiraGO', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-}
-
-/* NAVIGATION */ 
+/* NAVIGATION */
 a{
-    text-decoration: none;
-  }
-  ul{
-    list-style: none;
-  }
-  .brand-logo{
-      width: 80px;
-      transition: 0.3s;
-  }
-  .badge-danger{
-    color: black;
-  }
-  .nav-link{
-      color: black;
-      letter-spacing: .5px;
-      transition: 0.1s ease;
-  }
-  .navbar-nav .nav-item{
-      margin-right: 40px;
-  }
-  .navbar{
-    background-color: transparent;
-    backdrop-filter: blur(10px);
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+.brand-logo{
+    width: 80px;
     transition: 0.3s;
-  }
-  .navbar:hover{
-    background-color: white;
-  }
-  .nav-link:hover{
-      /* color: cadetblue !important; */
-      color: blue !important;
-      font-size: large;
-  }
-  .cart-icon{
-      transition: 0.3s;
-  }
-  
-  .cart-icon:hover{
-      transform: scale(1.1);
-  }
-  
-  .cart-icon .badge{
-      transition: background-color 0.3s;
-  }
-  
-  .cart-icon:hover .badge{
-      color: black !important;
-  }
-  .brand-logo:hover{
-    transform: scale(1.1);
-  }
-  .dropdown-menu {
+}
+.badge-danger{
+  color: black;
+}
+.nav-link{
+    color: black;
+    letter-spacing: .5px;
+    transition: 0.1s ease;
+}
+.navbar-nav .nav-item{
+    margin-right: 40px;
+    gap: 100px;
+}
+.navbar{
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+.navbar:hover{
+  background-color: white;
+}
+.nav-link:hover{
+    /* color: cadetblue !important; */
+    color: blue !important;
+    font-size: large;
+}
+.container{
+    padding-top: 20px;
+}
+.dropdown-menu {
     margin-top: 10px;
     border-radius: 5px;
   }
@@ -84,6 +62,7 @@ a{
   .dropdown-item:hover {
     color: blue;
   }
+  
 
 /* Utility stylings */
 img{
@@ -123,6 +102,23 @@ img{
     line-height: 1.5;
     opacity: 0.5;
     margin: 0.4rem 0;
+}
+.dropdown-menu {
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: blue;
 }
 
 /* product section */
@@ -167,6 +163,7 @@ img{
 .product-btns{
     display: flex;
     justify-content: center;
+    gap: 4px;
     margin-top: 1.4rem;
     opacity: 0;
     transition: opacity 0.6s ease;
@@ -200,7 +197,7 @@ img{
 }
 .btn-buy:hover{
     color: white;
-    background-color: blue;
+    background-color: red;
 }
 
 .product-info{
