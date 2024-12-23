@@ -58,10 +58,20 @@
                                 შეკვეთები
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">
+                        <li class="nav-item dropdown">
+                            <a href="" 
+                                class="nav-link dropdown-toggle"
+                                id="categoryDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                                >
                                 კატეგორიები
                             </a>
+                            <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                                <li><a href="" class="dropdown-item">კატეგორიის დამატება</a></li>
+                                <li><a href="admin-page-category.html" class="dropdown-item">ყველა კატეგორია</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
