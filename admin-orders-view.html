@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./Styles/admin-page-category.css">
+    <link rel="stylesheet" href="./Styles/admin-orders-view.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap">
     <title>EV Tbilisi</title>
@@ -54,7 +54,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="admin-page-orders.html" class="nav-link">
+                            <a href="" class="nav-link">
                                 შეკვეთები
                             </a>
                         </li>
@@ -78,43 +78,58 @@
             </div>
         </nav>
     </header>
-    <div class="categories">
-        <div class="category">
-            <span class="category-span">კატეგორია 1</span>
-            <button class="delete-button">წაშლა</button>
+    <div class="order-page">
+        <div class="overview">
+            <h2>შეძენა</h2>
+            <p>შეკვეთის ნომერი: <strong>2987</strong></p>
+            <p>შეკვეთის თარიღი: <strong>25.11.2024</strong></p>
+            <p>მთლიანი ჯამი: <strong>₾250.00</strong></p>
+            <p>გადახდის მეთოდი: <strong>საბანკო გადარიცხვა</strong></p>
         </div>
-        <div class="category">
-            <span class="category-span">კატეგორია 2</span>
-            <button class="delete-button">წაშლა</button>
+        <hr>
+        <!-- <div class="payment-details">
+            <h2>ჩვენი საბანკო დეტალები</h2>
+            <p>ბანკი: <strong>საქართველოს ბანკი</strong></p>
+            <p>ანგარიშის ნომერი: <strong>GE29BG0000000498631310</strong></p>
+
+            <p>ბანკი: <strong>თიბისი ბანკი</strong></p>
+            <p>ანგარიშის ნომერი: <strong>GE29BG0000000498631310</strong></p>
+            <p class="note">გთხოვთ გადარიცხვის დროს მოუთითოთ <strong>შეკვეთის ნომერი</strong>. თქვენი შეკვეთა არ გამოიგზავნება მანამ, სანამ არ მოხდება თანხის ასახვა ჩვენს ანგარიშზე.</p>
         </div>
-        <div class="category">
-            <span class="category-span">კატეგორია 3</span>
-            <button class="delete-button">წაშლა</button>
-        </div>
-        <div class="category">
-            <span class="category-span">კატეგორია 4</span>
-            <button class="delete-button">წაშლა</button>
-        </div>
-        <div class="category">
-            <span class="category-span">კატეგორია 5</span>
-            <button class="delete-button">წაშლა</button>
-        </div>
-        <div class="category">
-            <span class="category-span">კატეგორია 6</span>
-            <button class="delete-button">წაშლა</button>
-        </div>
-        <div class="category">
-            <span class="category-span">კატეგორია 7</span>
-            <button class="delete-button">წაშლა</button>
-        </div>
-        <div class="category">
-            <span class="category-span">კატეგორია 8</span>
-            <button class="delete-button">წაშლა</button>
-        </div>
-        <div class="category">
-            <span class="category-span">კატეგორია 9</span>
-            <button class="delete-button">წაშლა</button>
-        </div>
+        <hr> -->
+        <div class="order-details">
+            <h2>შეკვეთის დეტალები</h2>
+            <hr>
+            <div class="details-table">
+                <div class="item">
+                    <div class="label">Adapter GB/T to Type 2 (IEC62196) × 1</div>
+                    <div class="value">₾220.00</div>
+                </div>
+                <div class="item">
+                    <div class="label">Charging Cable Type 2 × 2</div>
+                    <div class="value">₾400.00</div>
+                </div>
+                <div class="item">
+                    <div class="label">Adapter GB/T to Type 2 (IEC62196) × 1</div>
+                    <div class="value">₾220.00</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="label">Charging Cable Type 2 × 2</div>
+                <div class="value">₾400.00</div>
+            </div>
+            
+            <div class="details-table">
+                <div class="row">
+                    <div class="label">მიწოდება:</div>
+                    <div class="value">₾10.00</div>
+                </div>
+                <div class="row total">
+                    <div class="label">მთლიანი ჯამი:</div>
+                    <div class="value">₾650.00</div>
+                </div>
+            </div>
+        </div>  
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
